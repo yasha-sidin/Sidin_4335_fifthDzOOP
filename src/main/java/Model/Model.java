@@ -29,4 +29,15 @@ public class Model implements iGetModel {
     public int size() {
         return students.size();
     }
+
+    @Override
+    public boolean delete(int studentNum) {
+        List<Student> studList = getAllStudents();
+        for(Student student : studList) {
+            if (student.getId() == studentNum) {
+                studList.remove(student);
+                return true;
+            }
+        return false;
+        }
 }
