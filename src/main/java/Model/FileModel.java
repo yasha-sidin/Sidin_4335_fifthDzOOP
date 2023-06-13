@@ -63,6 +63,7 @@ public class FileModel implements iGetModel {
      */
     public void saveAllStudentToFile(List<Student> students) {
         try (FileWriter fw = new FileWriter(fileName, true)) {
+            fw.close()
             for (Student pers : students) {
                 fw.write(pers.getFirstName() + " " + pers.getSecondName() + " " + pers.getAge() + " " + pers.getId());
                 fw.append('\n');
@@ -71,6 +72,21 @@ public class FileModel implements iGetModel {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
+    }
+
+    @Override
+    public boolean delete(int studentNum) {
+        List<Student> studList = getAllStudents();
+        for(Student student : studList) {
+            if (student.getId == studentNum) {
+                studList.remove(student);
+                saveAllStudentsToFile(studList);
+                return true;
+            }
+        return false;
+        }
+
+
     }
 }
 
