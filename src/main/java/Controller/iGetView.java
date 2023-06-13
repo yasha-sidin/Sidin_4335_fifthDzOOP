@@ -4,7 +4,7 @@ import Model.Student;
 
 import java.util.*;
 
-public interface iGetView<T> {
+public interface iGetView {
     /**
      *
      * @param  students list of Students
