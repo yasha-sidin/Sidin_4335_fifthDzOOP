@@ -25,5 +25,12 @@ public class View implements iGetView {
         System.out.print(message);
         return in.nextLine();
     }
+
+    @Override
+    void didWeDelete(boolean result) {
+        if (result == false) {
+            System.out.println("Нет такого студента")
+        }
+    }
 }
 
