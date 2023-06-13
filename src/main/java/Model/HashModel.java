@@ -22,7 +22,7 @@ public class HashModel implements iGetModel<HashMap> {
     public boolean delete(int studentNum) {
         List studList = getAllStudents();
         for(var item : studList) {
-            if (item[1].getId == studentNum) {
+            if (item[1].getId() == studentNum) {
                 studList.remove(item[1]);
                 return true;
             }
