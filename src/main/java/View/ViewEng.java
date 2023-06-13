@@ -23,4 +23,11 @@ public class ViewEng implements iGetView {
         System.out.print(message);
         return in.nextLine();
     }
+
+    @Override
+    void didWeDelete(boolean result) {
+        if (result == false) {
+            System.out.println("Student with this id exist")
+        }
+    }
 }
