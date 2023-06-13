@@ -32,5 +32,10 @@ public class View implements iGetView {
             System.out.println("Нет такого студента")
         }
     }
+
+    @Override
+    void exit() {
+        System.out.println("Вы вышли из программы!"); 
+    }
 }
 
