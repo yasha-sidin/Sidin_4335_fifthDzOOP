@@ -10,8 +10,6 @@ public interface iGetView<T> {
      * @param  students list of Students
      * @return print list of this Students
      */
-    void printAllStudents(HashMap<Long, Student> students);
-
     void printAllStudents(List<Student> students);
 
     /**
