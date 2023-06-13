@@ -30,4 +30,9 @@ public class ViewEng implements iGetView {
             System.out.println("Student with this id exist")
         }
     }
+
+    @Override
+    void exit() {
+        System.out.println("You exited from program!"); 
+    }
 }
