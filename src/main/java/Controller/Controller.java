@@ -5,9 +5,9 @@ import Model.Student;
 
 import java.util.*;
 
-public class Controller<T> {
-    private iGetView<T> view;
-    private iGetModel<T> model;
+public class Controller {
+    private iGetView view;
+    private iGetModel model;
     private T students;
 
     /**
@@ -15,7 +15,7 @@ public class Controller<T> {
      * @param model model part of MVP project
      * @return init new Controller
      */
-    public Controller(iGetView<T> view, iGetModel<T> model) {
+    public Controller(iGetView view, iGetModel model) {
         this.view = view;
         this.model = model;
         this.students = model.getAllStudents();
@@ -49,7 +49,7 @@ public class Controller<T> {
         //MVP
         getAllStudents();
         if (testData()) {
-            view.printAllStudents((List)students);
+            view.printAllStudents(students);
         } else {
             System.out.println("Список студентов пуст!");
         }
@@ -75,7 +75,7 @@ public class Controller<T> {
                     break;
                 case LIST:
                     getAllStudents();
-                    view.printAllStudents((HashMap<Long, Student>)students);
+                    view.printAllStudents(students);
                     break;
             }
 
