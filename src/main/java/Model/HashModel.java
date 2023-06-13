@@ -9,8 +9,8 @@ public class HashModel implements iGetModel<HashMap> {
     public HashModel(HashMap<Long, Student> students) {
         this.students = students;
     }
-    public HashMap<Long, Student> getAllStudents() {
-        return students;
+    public List<Student> getAllStudents() {
+        return students.values;
     }
 
     @Override
