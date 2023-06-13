@@ -20,4 +20,5 @@ public interface iGetView {
     String prompt(String message);
 
     void didWeDelete(boolean result);
+    void exit();
 }
