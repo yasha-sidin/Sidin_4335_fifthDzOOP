@@ -80,7 +80,8 @@ public class Controller {
                 case DELETE:
                     getAllStudents();
                     String studentNum = Integer.intParse(view.prompt("Введите номер студента: "));
-                    model.delete(studentNum);
+                    boolean result = model.delete(studentNum);
+                    view.didWeDelete(result);
             }
 
         }
