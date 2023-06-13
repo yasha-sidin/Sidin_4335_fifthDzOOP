@@ -18,5 +18,15 @@ public class HashModel implements iGetModel<HashMap> {
         return students.size();
     }
 
-
+    @Override
+    public boolean delete(int studentNum) {
+        List studList = getAllStudents();
+        for(var item : studList) {
+            if (item[1].getId == studentNum) {
+                studList.remove(item[1]);
+                return true;
+            }
+        }
+        return false;
+    }
 }
