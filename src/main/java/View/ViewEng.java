@@ -9,9 +9,9 @@ import java.util.Scanner;
 
 public class ViewEng implements iGetView {
     @Override
-    public void printAllStudents(List<Student> students) {
+    public void printAllStudents(List students) {
         System.out.println("------------List output------------");
-        for(Object stud: (List)students) {
+        for(var stud: students) {
             System.out.println(stud);
         }
         System.out.println("------------End of list------------");
