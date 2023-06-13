@@ -5,7 +5,7 @@ import Model.Student;
 import java.util.Collections;
 import java.util.List;
 
-public interface iGetModel<T>{
+public interface iGetModel{
     /**
      *
      * @return current class list of Students
