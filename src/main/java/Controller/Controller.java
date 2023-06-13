@@ -8,7 +8,7 @@ import java.util.*;
 public class Controller {
     private iGetView view;
     private iGetModel model;
-    private T students;
+    private List students;
 
     /**
      * @param view  view part of MVP project
@@ -71,7 +71,7 @@ public class Controller {
             switch (com) {
                 case EXIT:
                     getNewIteration = false;
-                    System.out.println("Выход из программы!");
+                    view.exit();
                     break;
                 case LIST:
                     getAllStudents();
