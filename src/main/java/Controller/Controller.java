@@ -74,8 +74,7 @@ public class Controller {
                     view.exit();
                     break;
                 case LIST:
-                    getAllStudents();
-                    view.printAllStudents(students);
+                    update();
                     break;
                 case DELETE:
                     getAllStudents();
