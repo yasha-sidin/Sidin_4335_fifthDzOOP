@@ -78,7 +78,7 @@ public class FileModel implements iGetModel {
     public boolean delete(int studentNum) {
         List<Student> studList = getAllStudents();
         for(Student student : studList) {
-            if (student.getId == studentNum) {
+            if (student.getId() == studentNum) {
                 studList.remove(student);
                 saveAllStudentsToFile(studList);
                 return true;
