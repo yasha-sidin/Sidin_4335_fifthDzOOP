@@ -18,4 +18,6 @@ public interface iGetView {
      * @return input construction by using Scanner
      */
     String prompt(String message);
+
+    void didWeDelete(boolean result);
 }
