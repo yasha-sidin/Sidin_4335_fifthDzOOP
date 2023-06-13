@@ -8,21 +8,12 @@ import java.util.Scanner;
 import Controller.iGetView;
 import Model.Student;
 
-public class View<T> implements iGetView<T> {
-    @Override
-    public void printAllStudents(HashMap<Long, Student> students) {
-        System.out.println("------------Список студентов------------");
-        for(Long value : students.keySet()) {
-            System.out.println(value + " : " + students.get(value));
-        }
-        System.out.println("--------------Конец списка--------------");
-    }
+public class View implements iGetView {
 
     @Override
     public void printAllStudents(List<Student> students) {
         System.out.println("------------List output------------");
-        for(Student stud: students)
-        {
+        for(Student stud: students) {
             System.out.println(stud);
         }
         System.out.println("------------End of list------------");
