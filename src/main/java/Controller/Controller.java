@@ -77,6 +77,10 @@ public class Controller {
                     getAllStudents();
                     view.printAllStudents(students);
                     break;
+                case DELETE:
+                    getAllStudents();
+                    int studentNum = view.prompt("Введите номер студента: ");
+                    model.delete(studentNum);
             }
 
         }
