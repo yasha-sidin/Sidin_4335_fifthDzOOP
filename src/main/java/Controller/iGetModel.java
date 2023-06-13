@@ -22,5 +22,5 @@ public interface iGetModel{
     *
     * @return delete student by his number or output info about existing of student with this number
     */
-    public void delete(int studentNum);
+    public boolean delete(int studentNum);
 }
