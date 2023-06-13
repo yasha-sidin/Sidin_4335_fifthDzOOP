@@ -10,7 +10,7 @@ public interface iGetView<T> {
      * @param  students list of Students
      * @return print list of this Students
      */
-    void printAllStudents(List<Student> students);
+    void printAllStudents(List students);
 
     /**
      *
