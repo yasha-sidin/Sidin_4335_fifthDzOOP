@@ -12,11 +12,11 @@ public class View implements iGetView {
 
     @Override
     public void printAllStudents(List<Student> students) {
-        System.out.println("------------List output------------");
+        System.out.println("------------Все студенты------------");
         for(Student stud: students) {
             System.out.println(stud);
         }
-        System.out.println("------------End of list------------");
+        System.out.println("------------Конец списка------------");
     }
 
     @Override
