@@ -10,6 +10,6 @@ public interface iGetModel<T>{
      *
      * @return current class list of Students
      */
-    public T getAllStudents();
+    public List getAllStudents();
     public int size();
 }
