@@ -11,9 +11,9 @@ import Model.Student;
 public class View implements iGetView {
 
     @Override
-    public void printAllStudents(List<Student> students) {
+    public void printAllStudents(List students) {
         System.out.println("------------Все студенты------------");
-        for(Student stud: students) {
+        for(var stud: students) {
             System.out.println(stud);
         }
         System.out.println("------------Конец списка------------");
